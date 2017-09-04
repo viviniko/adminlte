@@ -2587,12 +2587,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/viviniko/permission.git",
-                "reference": "b4367d7179129b3de02f3d47e607337d5e28cf36"
+                "reference": "bc95c83130150672716bc42c954104bb99a00b05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/viviniko/permission/b4367d7179129b3de02f3d47e607337d5e28cf36.zip",
-                "reference": "b4367d7179129b3de02f3d47e607337d5e28cf36",
+                "url": "https://files.phpcomposer.com/files/viviniko/permission/bc95c83130150672716bc42c954104bb99a00b05.zip",
+                "reference": "bc95c83130150672716bc42c954104bb99a00b05",
                 "shasum": ""
             },
             "require": {
@@ -2632,7 +2632,7 @@
                 "permission",
                 "viviniko"
             ],
-            "time": "2017-09-04T01:28:38+00:00"
+            "time": "2017-09-04T07:55:24+00:00"
         },
         {
             "name": "viviniko/repository",

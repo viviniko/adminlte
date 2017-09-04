@@ -113,9 +113,29 @@ class MenusTableSeeder extends Seeder
             'parent_id' => $menuPermission->id,
             'menu_id' => $menu->id,
             'title' => 'Users',
-            'url' => 'users',
+            'url' => 'permission/users',
             'target' => '_self',
             'icon_class' => 'fa fa-users',
+            'sort' => 0,
+        ]);
+
+        MenuItem::create([
+            'parent_id' => $menuPermission->id,
+            'menu_id' => $menu->id,
+            'title' => 'Roles',
+            'url' => 'permission/roles',
+            'target' => '_self',
+            'icon_class' => 'fa fa-circle-o',
+            'sort' => 0,
+        ]);
+
+        MenuItem::create([
+            'parent_id' => $menuPermission->id,
+            'menu_id' => $menu->id,
+            'title' => 'Permissions',
+            'url' => 'permission/permissions',
+            'target' => '_self',
+            'icon_class' => 'fa fa-circle-o',
             'sort' => 0,
         ]);
 
