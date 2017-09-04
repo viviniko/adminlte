@@ -11,6 +11,7 @@
         "laravel/tinker": "~1.0",
         "laravelcollective/html": "^5.5",
         "viviniko/mail": "dev-master",
+        "viviniko/media": "dev-master",
         "viviniko/menu": "dev-master",
         "viviniko/permission": "dev-master"
     },

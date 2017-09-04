@@ -69,6 +69,36 @@ class MenusTableSeeder extends Seeder
             'sort' => 3,
         ]);
 
+        $menuMedia = MenuItem::create([
+            'parent_id' => null,
+            'menu_id' => $menu->id,
+            'title' => 'Mail',
+            'url' => '',
+            'target' => '_self',
+            'icon_class' => 'fa fa-folder',
+            'sort' => 1100,
+        ]);
+
+        MenuItem::create([
+            'parent_id' => $menuMedia->id,
+            'menu_id' => $menu->id,
+            'title' => 'Medias',
+            'url' => 'medias',
+            'target' => '_self',
+            'icon_class' => 'fa fa-circle-o',
+            'sort' => 3,
+        ]);
+
+        MenuItem::create([
+            'parent_id' => $menuMedia->id,
+            'menu_id' => $menu->id,
+            'title' => 'Files',
+            'url' => 'medias/files',
+            'target' => '_self',
+            'icon_class' => 'fa fa-circle-o',
+            'sort' => 3,
+        ]);
+
         $menuPermission = MenuItem::create([
             'parent_id' => null,
             'menu_id' => $menu->id,

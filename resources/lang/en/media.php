@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'medias' => 'Medias',
+    'files' => 'Files',
+    'upload' => 'Upload',
+    'uploadFile' => 'Upload File',
+    'filename' => 'File Name',
+    'mime_type' => 'Type',
+    'size' => 'Size',
+    'deleted' => 'File Deleted',
+    'media_view' => 'View',
+    'media_copy' => 'Copy URL',
+    'copy_success' => 'Copy Success',
+    'copy_failed' => 'Copy Failed',
+    'copy_it_manually' => 'Copy Manually',
+    'create_folder' => 'Create Folder',
+    'new_folder' => 'New Folder',
+    'folder_deleted' => 'Folder Deleted',
+    'file_deleted' => 'File Deleted',
+    'file_renamed' => 'File Renamed',
+    'rename_failed' => 'Rename Failed',
+    'new_file_name' => 'New File Name',
+    'refresh' => 'Refresh',
+];

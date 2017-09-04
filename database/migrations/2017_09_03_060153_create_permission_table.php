@@ -72,6 +72,7 @@ class CreatePermissionTable extends Migration
 
         // Create table for storing admin user password resets
         Schema::create($this->passwordResetsTable, function (Blueprint $table) {
+            $table->increments('id');
             $table->string('email')->index();
             $table->string('token')->index();
             $table->timestamp('created_at')->nullable();

@@ -45,4 +45,19 @@ Route::group(['middleware' => 'auth'], function () {
             'except' => ['show']
         ]);
     });
+
+    Route::group(['namespace' => 'Media', 'as' => 'media.', 'prefix' => 'medias'], function () {
+        Route::get('/', 'MediaController@index')->name('medias.index');
+
+        Route::post('upload', 'MediaController@upload')->name('medias.upload');
+        Route::post('delete', 'MediaController@delete')->name('medias.delete');
+        Route::delete('{media}', 'MediaController@destroy')->name('medias.destroy');
+
+        Route::get('files', 'FileController@index')->name('files.index');
+        Route::post('files/upload', 'FileController@upload')->name('files.upload');
+        Route::post('files/mkdir', 'FileController@mkdir')->name('files.mkdir');
+        Route::delete('files/rmdir', 'FileController@rmdir')->name('files.rmdir');
+        Route::delete('files/delete', 'FileController@delete')->name('files.delete');
+        Route::post('files/rename', 'FileController@rename')->name('files.rename');
+    });
 });
