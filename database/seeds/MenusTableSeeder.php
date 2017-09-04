@@ -72,7 +72,7 @@ class MenusTableSeeder extends Seeder
         $menuMedia = MenuItem::create([
             'parent_id' => null,
             'menu_id' => $menu->id,
-            'title' => 'Mail',
+            'title' => 'Media',
             'url' => '',
             'target' => '_self',
             'icon_class' => 'fa fa-folder',
